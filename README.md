@@ -14,6 +14,7 @@ Call `to_bool` on any object. It will *usually* return false, except:
 
 * String: `"true"`, `"1"`, and `"yes"` are true
 * Integer: `1` is true
+* TrueClass: `true` is true
 
 See the spec, it pretty much maps it out.
 
