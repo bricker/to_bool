@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "to_bool"
-  gem.version       = "1.0.0"
+  gem.version       = "1.0.1"
   gem.authors       = ["Bryan Ricker"]
   gem.email         = ["bricker88@gmail.com"]
   gem.description   = %q{Super-simple gem that extends some Ruby classes with a "to_bool" method, which converts any object naturally into a boolean.}
   gem.summary       = %q{Convert any object naturally into a boolean}
-  gem.homepage      = "http://github.com/bricker88/to_bool"
+  gem.homepage      = "http://github.com/bricker/to_bool"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
