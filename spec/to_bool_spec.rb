@@ -3,42 +3,73 @@ Bundler.require
 
 describe "String" do
   it "is true if yes" do
-    "yes".to_bool.should eq true
+    expect("yes".to_bool).to eq true
   end
   
   it "is true if '1'" do
-    "1".to_bool.should eq true
+    expect("1".to_bool).to eq true
   end
   
   it "is true if 'true'" do
-    "true".to_bool.should eq true
+    expect("true".to_bool).to eq true
   end
   
   it "is false otherwise" do
-    "no".to_bool.should eq false
-    "false".to_bool.should eq false
-    "0".to_bool.should eq false
+    expect("no".to_bool).to eq false
+    expect("false".to_bool).to eq false
+    expect("0".to_bool).to eq false
+  end
+
+  it "is true when using to_boolean" do
+    expect("true".to_boolean).to eq true
   end
 end
 
 describe "Integer" do
   it "is true if 1" do
-    1.to_bool.should eq true
+    expect(1.to_bool).to eq true
   end
   
   it "is false otherwise" do
-    0.to_bool.should eq false
+    expect(0.to_bool).to eq false
+  end
+
+  it "is true when using to_boolean" do
+    expect(1.to_boolean).to eq true
   end
 end
 
 describe "TrueClass" do
   it "is true" do
-    true.to_bool.should eq true
+    expect(true.to_bool).to eq true
+  end
+
+  it "is true when using to_boolean" do
+    expect(true.to_boolean).to eq true
   end
 end
 
 describe "Object" do
   it "is false by default" do
-    Object.new.to_bool.should eq false
+    expect(Object.new.to_bool).to eq false
+  end
+
+  it "is false when using to_boolean" do
+    expect(Object.new.to_boolean).to eq false
+  end
+end
+
+describe "Symbol" do
+  it "is true if :true" do
+    expect(:true.to_bool).to eq true
+  end
+
+  it "is false otherwise" do
+    expect(:false.to_bool).to eq false
+    expect(:hoge.to_bool).to eq false
+  end
+
+  it "is true when using to_boolean" do
+    expect(:true.to_bool).to eq true
   end
 end
