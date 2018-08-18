@@ -21,7 +21,13 @@ See the spec, it pretty much maps it out.
 
 ## Contributing
 
-Yes.
+Yes!
+
+### Running Tests
+
+```
+bundle exec rspec
+```
 
 
 ## License
