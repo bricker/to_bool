@@ -33,7 +33,7 @@ end
 
 class Symbol
   def to_bool
-    self == :true
+    self.downcase == :true
   end
 
   alias_method :to_boolean, :to_bool
