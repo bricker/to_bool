@@ -3,7 +3,7 @@ class String
     %w{ 1 true yes t }.include? self.downcase
   end
 
-  alias_method :to_boolean, :to_bool
+  alias to_boolean to_bool
 end
 
 class Integer
@@ -11,7 +11,7 @@ class Integer
     self == 1
   end
 
-  alias_method :to_boolean, :to_bool
+  alias to_boolean to_bool
 end
 
 
@@ -20,7 +20,7 @@ class TrueClass
     self
   end
 
-  alias_method :to_boolean, :to_bool
+  alias to_boolean to_bool
 end
 
 class Object
@@ -28,7 +28,7 @@ class Object
     false
   end
 
-  alias_method :to_boolean, :to_bool
+  alias to_boolean to_bool
 end
 
 class Symbol
@@ -36,5 +36,5 @@ class Symbol
     self.downcase == :true
   end
 
-  alias_method :to_boolean, :to_bool
+  alias to_boolean to_bool
 end
