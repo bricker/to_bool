@@ -2,11 +2,11 @@ require 'bundler/setup'
 Bundler.require
 
 describe "String" do
-  it "is true if yes" do
+  it "is true if 'yes'" do
     expect("yes".to_bool).to eq true
   end
 
-  it "is true if YES" do
+  it "is true if 'YES'" do
     expect("YES".to_bool).to eq true
   end
 
