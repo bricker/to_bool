@@ -64,6 +64,10 @@ describe "Symbol" do
     expect(:true.to_bool).to eq true
   end
 
+  it "is true if :TRUE" do
+    expect(:TRUE.to_bool).to eq true
+  end
+
   it "is false otherwise" do
     expect(:false.to_bool).to eq false
     expect(:hoge.to_bool).to eq false
