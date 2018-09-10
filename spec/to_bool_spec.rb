@@ -2,18 +2,34 @@ require 'bundler/setup'
 Bundler.require
 
 describe "String" do
-  it "is true if yes" do
+  it "is true if 'yes'" do
     expect("yes".to_bool).to eq true
   end
-  
+
+  it "is true if 'YES'" do
+    expect("YES".to_bool).to eq true
+  end
+
   it "is true if '1'" do
     expect("1".to_bool).to eq true
   end
-  
+
   it "is true if 'true'" do
     expect("true".to_bool).to eq true
   end
-  
+
+  it "is true if 'TRUE'" do
+    expect("TRUE".to_bool).to eq true
+  end
+
+  it "is true if 't'" do
+    expect("t".to_bool).to eq true
+  end
+
+  it "is true if 'T'" do
+    expect("T".to_bool).to eq true
+  end
+
   it "is false otherwise" do
     expect("no".to_bool).to eq false
     expect("false".to_bool).to eq false
@@ -62,6 +78,10 @@ end
 describe "Symbol" do
   it "is true if :true" do
     expect(:true.to_bool).to eq true
+  end
+
+  it "is true if :TRUE" do
+    expect(:TRUE.to_bool).to eq true
   end
 
   it "is false otherwise" do
