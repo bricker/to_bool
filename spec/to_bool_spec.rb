@@ -22,6 +22,14 @@ describe "String" do
     expect("TRUE".to_bool).to eq true
   end
 
+  it "is true if 't'" do
+    expect("t".to_bool).to eq true
+  end
+
+  it "is true if 'T'" do
+    expect("T".to_bool).to eq true
+  end
+
   it "is false otherwise" do
     expect("no".to_bool).to eq false
     expect("false".to_bool).to eq false
