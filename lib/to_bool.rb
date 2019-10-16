@@ -1,6 +1,6 @@
 class String
   def to_bool
-    %w{ 1 true yes t }.include? self.downcase
+    %w{ 1 true yes t y }.include? self.downcase
   end
 
   alias to_boolean to_bool
