@@ -10,6 +10,14 @@ describe "String" do
     expect("YES".to_bool).to eq true
   end
 
+  it "is true if 'y'" do
+    expect("y".to_bool).to eq true
+  end
+
+  it "is true if 'Y'" do
+    expect("Y".to_bool).to eq true
+  end
+
   it "is true if '1'" do
     expect("1".to_bool).to eq true
   end
@@ -32,7 +40,13 @@ describe "String" do
 
   it "is false otherwise" do
     expect("no".to_bool).to eq false
+    expect("NO".to_bool).to eq false
+    expect("n".to_bool).to eq false
+    expect("N".to_bool).to eq false
     expect("false".to_bool).to eq false
+    expect("FALSE".to_bool).to eq false
+    expect("f".to_bool).to eq false
+    expect("F".to_bool).to eq false
     expect("0".to_bool).to eq false
   end
 
