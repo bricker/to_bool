@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "to_bool"
-  gem.version       = "1.2.0"
+  gem.version       = "2.0.0"
   gem.authors       = ["Bryan Ricker"]
   gem.email         = ["bryancricker@gmail.com"]
   gem.description   = %q{Super-simple gem that extends some Ruby classes with a "to_bool" method, which converts any object naturally into a boolean.}
