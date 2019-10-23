@@ -12,7 +12,7 @@ Natural coercion into boolean (true / false). Useful for API interaction.
 
 Call `to_bool` on any object. It will *usually* return false, except:
 
-* String: `"true"`, `"1"`, and `"yes"` are true
+* String: `"true"`, `"1"`, `"y"`, and `"yes"` are true
 * Integer: `1` is true
 * TrueClass: `true` is true
 * Symbol: `:true` is true
