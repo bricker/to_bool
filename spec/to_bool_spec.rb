@@ -104,6 +104,6 @@ describe "Symbol" do
   end
 
   it "is true when using to_boolean" do
-    expect(:true.to_bool).to eq true
+    expect(:true.to_boolean).to eq true
   end
 end
