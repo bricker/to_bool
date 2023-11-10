@@ -28,8 +28,3 @@ Yes!
 ```
 bundle exec rspec
 ```
-
-
-## License
-
-MIT
