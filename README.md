@@ -2,11 +2,9 @@
 
 Natural coercion into boolean (true / false). Useful for API interaction.
 
-
 ## Installation
 
 `gem "to_bool"`
-
 
 ## Usage
 
@@ -25,6 +23,6 @@ Yes!
 
 ### Running Tests
 
-```
+```sh
 bundle exec rspec
 ```
