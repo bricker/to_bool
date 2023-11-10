@@ -24,5 +24,5 @@ Yes!
 ### Running Tests
 
 ```sh
-bundle exec rspec
+ruby spec/to_bool_spec.rb
 ```

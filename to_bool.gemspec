@@ -12,10 +12,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = "http://github.com/bricker/to_bool"
   gem.license       = "MIT"
 
-  gem.files         = `git ls-files`.split($/)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.files         = %w{lib/to_bool.rb}
+  gem.test_files    = %w{spec/to_bool_spec.rb}
   gem.require_paths = ["lib"]
-
-  gem.add_development_dependency "rspec", [">= 0"]
 end
